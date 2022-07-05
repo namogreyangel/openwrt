@@ -73,11 +73,11 @@ jobs:
           # 例如:
 
           cat >> .config <<EOF
-          CONFIG_TARGET_IMAGES_GZIP=y
-          CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
-          CONFIG_KERNEL_BUILD_DOMAIN="Azure"
-          CONFIG_MODULES=y
-          CONFIG_HAVE_DOT_CONFIG=y
+CONFIG_TARGET_IMAGES_GZIP=y
+CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
+CONFIG_KERNEL_BUILD_DOMAIN="Azure"
+CONFIG_MODULES=y
+CONFIG_HAVE_DOT_CONFIG=y
 # CONFIG_TARGET_sunxi is not set
 # CONFIG_TARGET_apm821xx is not set
 # CONFIG_TARGET_ath25 is not set
