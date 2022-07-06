@@ -101,6 +101,8 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
+          CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
+          CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           CONFIG_MODULES=y
           CONFIG_HAVE_DOT_CONFIG=y
           CONFIG_TARGET_ipq40xx_generic=y
