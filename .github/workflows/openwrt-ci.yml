@@ -72,12 +72,12 @@ jobs:
           # 在 cat >> .config <<EOF 到 EOF 之间粘贴你的编译配置, 需注意缩进关系
           # 例如:
 
-          cat >> .          CONFIG <<EOF
+          cat >> .CONFIG <<EOF
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           CONFIG_MODULES=y
-          CONFIG_HAVE_DOT_          CONFIG=y
+          CONFIG_HAVE_DOT_CONFIG=y
           CONFIG_TARGET_ipq40xx=y
 
           #
@@ -85,7 +85,7 @@ jobs:
           # OpenWrt           CONFIGuration
           #
           CONFIG_MODULES=y
-          CONFIG_HAVE_DOT_          CONFIG=y
+          CONFIG_HAVE_DOT_CONFIG=y
           #           CONFIG_TARGET_sunxi is not set
           #           CONFIG_TARGET_apm821xx is not set
           #           CONFIG_TARGET_ath25 is not set
@@ -253,7 +253,7 @@ jobs:
           CONFIG_DEFAULT_ppp=y
           CONFIG_DEFAULT_ppp-mod-pppoe=y
           CONFIG_DEFAULT_procd=y
-          CONFIG_DEFAULT_sw          CONFIG=y
+          CONFIG_DEFAULT_swCONFIG=y
           CONFIG_DEFAULT_uboot-envtools=y
           CONFIG_DEFAULT_uci=y
           CONFIG_DEFAULT_uclient-fetch=y
@@ -339,7 +339,7 @@ jobs:
           CONFIG_SHADOW_PASSWORDS=y
           #           CONFIG_CLEAN_IPKG is not set
           #           CONFIG_IPK_FILES_CHECKSUMS is not set
-          #           CONFIG_INCLUDE_          CONFIG is not set
+          #           CONFIG_INCLUDE_CONFIG is not set
           #           CONFIG_REPRODUCIBLE_DEBUG_INFO is not set
           #           CONFIG_COLLECT_KERNEL_DEBUG is not set
 
@@ -565,8 +565,8 @@ jobs:
           CONFIG_NEED_TOOLCHAIN=y
           #           CONFIG_TOOLCHAINOPTS is not set
           #           CONFIG_EXTRA_TARGET_ARCH is not set
-          CONFIG_EXTRA_BINUTILS_          CONFIG_OPTIONS=""
-          CONFIG_EXTRA_GCC_          CONFIG_OPTIONS=""
+          CONFIG_EXTRA_BINUTILS_CONFIG_OPTIONS=""
+          CONFIG_EXTRA_GCC_CONFIG_OPTIONS=""
           #           CONFIG_GCC_DEFAULT_PIE is not set
           #           CONFIG_GCC_DEFAULT_SSP is not set
           #           CONFIG_SJLJ_EXCEPTIONS is not set
@@ -616,7 +616,7 @@ jobs:
           #           CONFIG_PACKAGE_bridge is not set
           CONFIG_PACKAGE_busybox=m
           #           CONFIG_BUSYBOX_CUSTOM is not set
-          CONFIG_BUSYBOX_DEFAULT_HAVE_DOT_          CONFIG=y
+          CONFIG_BUSYBOX_DEFAULT_HAVE_DOT_CONFIG=y
           #           CONFIG_BUSYBOX_DEFAULT_DESKTOP is not set
           #           CONFIG_BUSYBOX_DEFAULT_EXTRA_COMPAT is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEDORA_COMPAT is not set
@@ -637,8 +637,8 @@ jobs:
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_INSTALLER is not set
           #           CONFIG_BUSYBOX_DEFAULT_INSTALL_NO_USR is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_SUID is not set
-          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_SUID_          CONFIG is not set
-          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_SUID_          CONFIG_QUIET is not set
+          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_SUID_CONFIG is not set
+          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_SUID_CONFIG_QUIET is not set
           CONFIG_BUSYBOX_DEFAULT_FEATURE_PREFER_APPLETS=y
           CONFIG_BUSYBOX_DEFAULT_BUSYBOX_EXEC_PATH="/proc/self/exe"
           #           CONFIG_BUSYBOX_DEFAULT_SELINUX is not set
@@ -1031,7 +1031,7 @@ jobs:
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_XARGS_SUPPORT_ARGS_FILE is not set
           #           CONFIG_BUSYBOX_DEFAULT_BOOTCHARTD is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_BOOTCHARTD_BLOATED_HEADER is not set
-          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_BOOTCHARTD_          CONFIG_FILE is not set
+          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_BOOTCHARTD_CONFIG_FILE is not set
           CONFIG_BUSYBOX_DEFAULT_HALT=y
           CONFIG_BUSYBOX_DEFAULT_POWEROFF=y
           CONFIG_BUSYBOX_DEFAULT_REBOOT=y
@@ -1384,7 +1384,7 @@ jobs:
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_BASIC_AUTH is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_AUTH_MD5 is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_CGI is not set
-          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_          CONFIG_WITH_SCRIPT_INTERPR is not set
+          #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_ENCODE_URL_STR is not set
           #           CONFIG_BUSYBOX_DEFAULT_FEATURE_HTTPD_ERROR_PAGES is not set
@@ -1763,7 +1763,7 @@ jobs:
           #           CONFIG_PACKAGE_snapshot-tool is not set
           #           CONFIG_PACKAGE_sqm-scripts is not set
           #           CONFIG_PACKAGE_sqm-scripts-extra is not set
-          CONFIG_PACKAGE_sw          CONFIG=y
+          CONFIG_PACKAGE_swCONFIG=y
           CONFIG_PACKAGE_ubox=y
           CONFIG_PACKAGE_ubus=y
           CONFIG_PACKAGE_ubusd=y
@@ -2621,7 +2621,7 @@ jobs:
           #           CONFIG_PACKAGE_kmod-sky2 is not set
           #           CONFIG_PACKAGE_kmod-solos-pci is not set
           #           CONFIG_PACKAGE_kmod-spi-ks8995 is not set
-          #           CONFIG_PACKAGE_kmod-sw          CONFIG is not set
+          #           CONFIG_PACKAGE_kmod-swCONFIG is not set
           #           CONFIG_PACKAGE_kmod-switch-bcm53xx is not set
           #           CONFIG_PACKAGE_kmod-switch-bcm53xx-mdio is not set
           #           CONFIG_PACKAGE_kmod-switch-ip17xx is not set
@@ -7219,10 +7219,6 @@ jobs:
           # end of Font-Utils
           # end of Xorg
           EOF
-
-          #
-          # ===============================================================
-          # 
 
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
