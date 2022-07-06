@@ -79,67 +79,11 @@ jobs:
           CONFIG_MODULES=y
           CONFIG_HAVE_DOT_CONFIG=y
           CONFIG_TARGET_ipq40xx=y
-          #           CONFIG_TARGET_archs38 is not set
-          #           CONFIG_TARGET_omap is not set
-          #           CONFIG_TARGET_uml is not set
-          #           CONFIG_TARGET_zynq is not set
-          #           CONFIG_TARGET_x86 is not set
-          #           CONFIG_TARGET_MULTI_PROFILE is not set
-          #           CONFIG_TARGET_ipq40xx_Default is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_8dev_habanero-dvk is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_8dev_jalapeno is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_alfa-network_ap120c-ac is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_asus_map-ac2200 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_asus_rt-ac58u is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_asus_rt-acrh17 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_avm_fritzbox-4040 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_avm_fritzbox-7530 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_avm_fritzrepeater-1200 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_avm_fritzrepeater-3000 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_aruba_ap-303 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_aruba_ap-303h is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_aruba_ap-365 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_buffalo_wtr-m2133hp is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_cellc_rtl30vw is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_century_wr142ac is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_century_wr142ac-nand is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_meraki_mr33 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_compex_wpj419 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_compex_wpj428 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_cilab_meshpoint-one is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_dlink_dap-2610 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_ezviz_cs-w3-wd1200g-eup is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_engenius_eap1300 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_engenius_eap2200 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_engenius_emd1 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_engenius_emr3500 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_engenius_ens620ext is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_glinet_gl-b1300 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_glinet_gl-s1300 is not set
-          CONFIG_TARGET_ipq40xx_DEVICE_hiwifi_c526a=y
-          #           CONFIG_TARGET_ipq40xx_DEVICE_hugo_ac1200 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_linksys_ea6350v3 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_linksys_ea8300 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_mobipromo_cm520-79f is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_netgear_ex6100v2 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_netgear_ex6150v2 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_netgear_ex6200v2 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_openmesh_a42 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_openmesh_a62 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_p2w_r619ac is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_p2w_r619ac-128m is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_qcom_ap-dk01.1-c1 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_qcom_ap-dk04.1-c1 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_qxwlan_e2600ac-c1 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_qxwlan_e2600ac-c2 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_unielec_u4019-32m is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_zte_mf263 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_zyxel_nbg6617 is not set
-          #           CONFIG_TARGET_ipq40xx_DEVICE_zyxel_wre6606 is not set
+          CONFIG_TARGET_ipq40xx_Default=y
           CONFIG_HAS_DEVICES=y
           CONFIG_TARGET_BOARD="ipq40xx"
           CONFIG_TARGET_SUBTARGET="generic"
-          ##CONFIG_TARGET_PROFILE="DEVICE_hiwifi_c526a"
+          CONFIG_TARGET_PROFILE="DEVICE_hiwifi_c526a"
           CONFIG_TARGET_ARCH_PACKAGES="arm_cortex-a7_neon-vfpv4"
           CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe"
           CONFIG_CPU_TYPE="cortex-a7+neon-vfpv4"
@@ -232,90 +176,45 @@ jobs:
           CONFIG_arm_v7=y
           CONFIG_ARCH="arm"
 
-          #
-          # Target Images
-          #
-          CONFIG_TARGET_ROOTFS_INITRAMFS=y
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_NONE is not set
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_GZIP is not set
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_BZIP2 is not set
-          CONFIG_TARGET_INITRAMFS_COMPRESSION_LZMA=y
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_LZO is not set
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_LZ4 is not set
-          #           CONFIG_TARGET_INITRAMFS_COMPRESSION_XZ is not set
-          CONFIG_EXTERNAL_CPIO=""
-          #           CONFIG_TARGET_INITRAMFS_FORCE is not set
 
-          #
-          # Root filesystem archives
-          #
+          CONFIG_TARGET_ROOTFS_INITRAMFS=y
+
+          CONFIG_TARGET_INITRAMFS_COMPRESSION_LZMA=y
+
+          CONFIG_EXTERNAL_CPIO=""
+
           CONFIG_TARGET_ROOTFS_CPIOGZ=y
           CONFIG_TARGET_ROOTFS_TARGZ=y
 
-          #
-          # Root filesystem images
-          #
           CONFIG_TARGET_ROOTFS_EXT4FS=y
           CONFIG_TARGET_EXT4_RESERVED_PCT=0
           CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
-          #           CONFIG_TARGET_EXT4_BLOCKSIZE_2K is not set
-          #           CONFIG_TARGET_EXT4_BLOCKSIZE_1K is not set
+
           CONFIG_TARGET_EXT4_BLOCKSIZE=4096
-          #           CONFIG_TARGET_EXT4_JOURNAL is not set
+
           CONFIG_TARGET_ROOTFS_SQUASHFS=y
           CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=1024
           CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
           CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
           CONFIG_TARGET_IMAGES_GZIP=y
 
-          #
-          # Image Options
-          #
           CONFIG_TARGET_ROOTFS_PARTSIZE=160
-          #           CONFIG_TARGET_ROOTFS_PERSIST_VAR is not set
-          # end of Target Images
 
-          #           CONFIG_EXPERIMENTAL is not set
 
-          #
-          # Global build settings
-          #
-          #           CONFIG_JSON_OVERVIEW_IMAGE_INFO is not set
-          #           CONFIG_ALL_NONSHARED is not set
-          #           CONFIG_ALL_KMODS is not set
-          #           CONFIG_ALL is not set
-          #           CONFIG_BUILDBOT is not set
           CONFIG_SIGNED_PACKAGES=y
           CONFIG_SIGNATURE_CHECK=y
 
-          #
-          # General build options
-          #
-          #           CONFIG_DISPLAY_SUPPORT is not set
-          #           CONFIG_BUILD_PATENTED is not set
-          #           CONFIG_BUILD_NLS is not set
           CONFIG_SHADOW_PASSWORDS=y
-          #           CONFIG_CLEAN_IPKG is not set
-          #           CONFIG_IPK_FILES_CHECKSUMS is not set
-          #           CONFIG_INCLUDE_CONFIG is not set
-          #           CONFIG_REPRODUCIBLE_DEBUG_INFO is not set
-          #           CONFIG_COLLECT_KERNEL_DEBUG is not set
 
-          #
-          # Kernel build options
-          #
+
+
           CONFIG_KERNEL_BUILD_USER=""
           CONFIG_KERNEL_BUILD_DOMAIN=""
           CONFIG_KERNEL_PRINTK=y
           CONFIG_KERNEL_SWAP=y
-          #           CONFIG_KERNEL_PROC_STRIPPED is not set
+
           CONFIG_KERNEL_DEBUG_FS=y
-          #           CONFIG_KERNEL_ARM_PMU is not set
-          #           CONFIG_KERNEL_PERF_EVENTS is not set
-          #           CONFIG_KERNEL_PROFILING is not set
-          #           CONFIG_KERNEL_UBSAN is not set
-          #           CONFIG_KERNEL_KCOV is not set
-          #           CONFIG_KERNEL_TASKSTATS is not set
+
           CONFIG_KERNEL_KALLSYMS=y
           #           CONFIG_KERNEL_FTRACE is not set
           CONFIG_KERNEL_DEBUG_KERNEL=y
@@ -7108,74 +7007,7 @@ jobs:
           #           CONFIG_PACKAGE_sshpass is not set
           #           CONFIG_PACKAGE_strace is not set
           CONFIG_STRACE_NONE=y
-          #           CONFIG_STRACE_LIBDW is not set
-          #           CONFIG_STRACE_LIBUNWIND is not set
-          #           CONFIG_PACKAGE_stress is not set
-          #           CONFIG_PACKAGE_stress-ng is not set
-          #           CONFIG_PACKAGE_sumo is not set
-          #           CONFIG_PACKAGE_syncthing is not set
-          #           CONFIG_PACKAGE_sysrepo is not set
-          #           CONFIG_PACKAGE_sysrepocfg is not set
-          #           CONFIG_PACKAGE_sysrepoctl is not set
-          #           CONFIG_PACKAGE_sysstat is not set
-          #           CONFIG_PACKAGE_tar is not set
-          #           CONFIG_PACKAGE_taskset is not set
-          #           CONFIG_PACKAGE_taskwarrior is not set
-          #           CONFIG_PACKAGE_telegraf is not set
-          #           CONFIG_PACKAGE_telegraf-full is not set
-          #           CONFIG_PACKAGE_telldus-core is not set
-          #           CONFIG_PACKAGE_temperusb is not set
-          #           CONFIG_PACKAGE_tesseract is not set
-          #           CONFIG_PACKAGE_tini is not set
-          #           CONFIG_PACKAGE_tinyionice is not set
-          #           CONFIG_PACKAGE_tracertools is not set
-          #           CONFIG_PACKAGE_tree is not set
-          #           CONFIG_PACKAGE_triggerhappy is not set
           CONFIG_PACKAGE_ubi-utils=y
-          #           CONFIG_PACKAGE_ucode is not set
-          #           CONFIG_PACKAGE_udns-dnsget is not set
-          #           CONFIG_PACKAGE_udns-ex-rdns is not set
-          #           CONFIG_PACKAGE_udns-rblcheck is not set
-          #           CONFIG_PACKAGE_ugps is not set
-          #           CONFIG_PACKAGE_uhubctl is not set
-          #           CONFIG_PACKAGE_uledd is not set
-          #           CONFIG_PACKAGE_unshare is not set
-          #           CONFIG_PACKAGE_upx is not set
-          #           CONFIG_PACKAGE_usb-modeswitch is not set
-          #           CONFIG_PACKAGE_usbids is not set
-          #           CONFIG_PACKAGE_usbutils is not set
-          #           CONFIG_PACKAGE_uuidd is not set
-          #           CONFIG_PACKAGE_uuidgen is not set
-          #           CONFIG_PACKAGE_uvcdynctrl is not set
-          #           CONFIG_PACKAGE_v4l-utils is not set
-          #           CONFIG_PACKAGE_view1090 is not set
-          #           CONFIG_PACKAGE_viewadsb is not set
-          #           CONFIG_PACKAGE_watchcat is not set
-          #           CONFIG_PACKAGE_whereis is not set
-          #           CONFIG_PACKAGE_which is not set
-          #           CONFIG_PACKAGE_whiptail is not set
-          #           CONFIG_PACKAGE_whois is not set
-          #           CONFIG_PACKAGE_wifitoggle is not set
-          #           CONFIG_PACKAGE_wipe is not set
-          #           CONFIG_PACKAGE_xsltproc is not set
-          #           CONFIG_PACKAGE_xxd is not set
-          #           CONFIG_PACKAGE_yanglint is not set
-          #           CONFIG_PACKAGE_yara is not set
-          #           CONFIG_PACKAGE_ykclient is not set
-          #           CONFIG_PACKAGE_ykpers is not set
-          #           CONFIG_PACKAGE_yq is not set
-          # end of Utilities
-
-          #
-          # Xorg
-          #
-
-          #
-          # Font-Utils
-          #
-          #           CONFIG_PACKAGE_font          CONFIG is not set
-          # end of Font-Utils
-          # end of Xorg
           EOF
 
           sed -i 's/^[ \t]*//g' ./.config
