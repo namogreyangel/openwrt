@@ -12,7 +12,7 @@ name: OpenWrt-CI-22.03
 on:
   push:
     branches: 
-      - openwrt-22.03
+      - openwrt-99.03
   # schedule:
   #   - cron: 0 20 * * *
   release:
