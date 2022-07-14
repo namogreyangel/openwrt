@@ -12,7 +12,7 @@ name: OpenWrt-CImaster
 on:
   push:
     branches: 
-      - master
+      - openwrt 22.03
   # schedule:
   #   - cron: 0 20 * * *
   release:
